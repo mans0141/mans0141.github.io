@@ -1,0 +1,48 @@
+Fabiana Mansueto Silva – Student no. 040899345
+18W_LIB2024_010_Internet Applications
+Final Assignment
+Topic: Travel to a remote/ridiculous location
+Project: Jules Verne Travel - Journey to the Center of the Earth Project
+
+Image Sources
+-------------
+-------------
+
+My images
+---------
+
+Image name:	img1jvtlogo.jpg
+Description: 	logo of the Jules Verne Travel.
+Source: 	created by Fabiana Mansueto Silva
+
+Unsplash images
+---------------
+
+Unsplash is a platform fueled by a community that has generously gifted hundreds of thousands of their own photos. 
+The list of images used in this project is 100% royalty-free photography from Unsplash Images Website.
+
+Image name:	img2volcanot1.jpg
+Descripition:	volcano and men
+Source:	        Unsplash Website
+Link:		https://unsplash.com/photos/vmQ30d-NRRI
+
+Image name:	img3volcano.jpg
+Description:	volcano
+Source:	        Unsplash Website
+Link:		https://unsplash.com/photos/Rj21YHC1CIY
+
+Image name:	img4cave.jpg
+Description:	cave and men
+Source:	        Unsplash Website
+Link:		https://unsplash.com/photos/nF72WGwROaQ
+
+Image name:	img5camp.jpg
+Description:	camping inside a cave
+Source:	        Unsplash Website
+Link:		https://unsplash.com/photos/g8fqQiwaymM
+
+Image name:	img6caveice.jpg
+Description:	cave, ice and men
+Source:	        Unsplash Website
+Link:		https://unsplash.com/photos/zZURduYLN9w
+

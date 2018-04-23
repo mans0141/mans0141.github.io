@@ -1,1 +1,18 @@
-// The js for slider goes in this file
+function openNav() {
+    document.getElementById("sideNav").style.width = "40%";
+}
+
+function closeNav() {
+    document.getElementById("sideNav").style.width = "0";
+}
+
+$( document ).ready(function() {
+    $(".rslides").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        prevText: "<<",
+        nextText: ">>",
+        namespace: "large-btns"
+    });
+});

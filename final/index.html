@@ -1,10 +1,276 @@
 <!DOCTYPE html>
-<html>
+
+<!-- Language attribute = Canadian English -->
+<html lang="en-ca">
+
+
+<!-- The begin of the head element -->
+<!-- To define the document title, character set, styles, links, scripts, and other meta information. ... -->
 <head>
-	<title>Home Page</title>
+    <!-- Title of the document -->
+    <title>Home Page HTML - Jules Verne Travel</title>
+    <!-- To define the character set of this document -->
+	<meta charset="utf-8">
+	<!-- Meta description tag is a SEO tag used here to tell the site crawlers what this site is about -->
+    <meta name="description" content="sell the journey to the center of the earth">
+    <!-- Meta keywords is a SEO tag used here to tell the site crawlers about the keywords in this website -->
+    <meta name="keywords" content="extraordinary travel, journey, jules verne, center of the earth, geological, mineralogy">
+    <!-- To tell the SEO crawlers to index and follow this webpage -->
+    <meta name="robots" content="index, follow">
+    <!-- CSS - link css file -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    <!-- JS - link javascript file -->
+    <script src="scripts/main.js"></script>
 </head>
-<body>
-<h1>Home Page</h1>
-<p>The changes are working...yay</p>
+
+
+<!-- The begin of the body element -->
+<body class="clearfix">
+
+    <!-- The begin of the Search Bar -->
+    <section id="search-line">
+        <form action="somepage.php" method="get">
+            <input type="search" name="googlesearch" placeholder="keywords...">
+            <input type="submit" value="Search">
+        </form>
+    </section>
+    <!-- The end of the Search Bar -->
+
+
+    <!-- The begin of the header -->
+	<header>
+        <section id="topnav-container">
+
+            <!-- Logo elements start - Image no.1 and Company's name-->
+            <div class="logo">
+                <img src="images/img1jvtlogo.png" width="60" height="60" alt="Jules Verne Travel Logo">
+                <div>
+                    <h1>Jules Verne</h1>
+                    <h1>Travel</h1>
+                </div>
+            </div>
+            <!-- Logo elements end -->
+
+            <!-- Desktop/Tablet Navigation start -->
+            <nav class="desktop-nav">
+                <ul class="main-nav">
+                  <li>
+                    <a href="index.html" title="link to home page of Jules Verne Travel">HOME</a>
+                  </li>
+                  <li>
+                    <a href="thirdpage.html" title="link to journey details">JOURNEY</a>
+                  </li>
+                  <li>
+                    <a href="jvtaboutus.html" title="link to about the Jules Verne Travel">ABOUT US</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" title="link to contact form">CONTACT</a>
+                  </li>
+                </ul>
+            </nav>
+            <!-- Desktop Navigation end -->
+
+            <!-- Navigation for Mobile start -->
+            <nav class="mobile-nav smart">
+                <a href="javascript:void(0)" onclick="openNav()"></a>
+            </nav>
+            <div id="sideNav">
+                <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+                <a href="index.html" title="link to home page of Jules Verne Travel">HOME</a>
+                <a href="thirdpage.html" title="link to journey details">JOURNEY</a>
+                <a href="jvtaboutus.html" title="link to about the Jules Verne Travel">ABOUT US</a>
+                <a href="contact.html" title="link to contact form">CONTACT</a>
+            </div>
+            <!-- Navigation for Mobile end -->
+
+        </section>
+    </header>
+    <!-- The end of the header -->
+
+    <!-- Decorative element start -->
+    <div id="red-division" class="red-division"></div>
+    <!-- Decorative element end -->
+
+
+    <!-- Principal Element of the Home Page start -->
+    <!-- This container control the background image -->
+    <div id="block1-container">
+
+        <!-- Background Image - Image no.2 -->
+        <img class="block1-bg" src="images/img2volcanot1.jpg" alt="Volcano and Tourist Background">
+
+        <!-- Article no. 1 (principal) - Image no. 3_only for desktop and Image no. 4_only for desktop -->
+        <section id="block1">
+            <div class="article img-r">
+                <article>
+                    <h2>JOURNEY TO THE CENTER OF THE EARTH</h2>
+                    <p>
+                        This journey is the realization of an amazing dream! The Journey to the Center of the Earth is an extraordinary journey inspired by Jules Verne science fiction novel. Imagine visiting on the interior of the planet, some miles from the Earth’s surface; looking down into the volcano with the knowledge that you are visiting the heart of the planet. Those who enjoyed this travel two years ago still remember every detail – where they were, who they were with and how they felt. The moment the first man discovery the fantastic world inside the Earth is a historical and unforgettable moment to remember. Today is your turn!  You have an opportunity to enjoy an extraordinary voyage to the interior of the Earth through volcanic tubes, an exotic world plenty of the amazing colours and rock formations.
+                    </p>
+                </article>
+                <div class="img">
+                    <!-- <img src="images/img3volcano.jpg" alt="volcano"> -->
+                    <img class="desktop" src="images/img3volcano.jpg" alt="volcano">
+                    <img class="desktop" src="images/img4cave.jpg" alt="brow cave and tourist">
+                </div>
+            </div>
+        </section>
+        <!-- Article no. 1 end -->
+
+    </div>
+    <!-- Principal Element of the Home Page end -->
+
+
+    <!-- Follow Us bar start -->
+    <section id="followus-container">
+        <h2>Follow Us</h2>
+        <div class="follow-icons">
+            <a href="https://www.instagram.com/">
+                <img src="images/001-instagram.png" alt="instagran button">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/002-youtube.png" alt="youtube button">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="images/003-twitter.png" alt="twitter button">
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="images/004-facebook.png" alt="facebook button">
+            </a>
+        </div>
+    </section>
+    <!-- Follow Us bar end -->
+
+
+    <!-- Article no. 2 and no. 3 Start -->
+    <section id="block2">
+
+        <!-- Article no. 2 (left size)_responsive - Image no. 5_responsive -->
+        <div class="article img-l">
+            <div class="img">
+                <img class="main-img" src="images/img5camp.jpg" alt="camping inside a cave">
+            </div>
+            <article>
+                <h2>ADVENTURE AND DISCOVERY TRAVEL</h2>
+                <p>
+                    The Journey to the Center of the Earth is not only an adventure. The importance of the Earth’s internal structure knowledge to science is vital for the survival of the human beings. This knowledge enables us to explain some of natural phenomena such as earthquakes, tsunamis, and volcanic eruptions. In addition, selling this extraordinary voyage, we are funding scientific studies of minerals and archaeological excavation. In addition, the development of geological mineralogy is one of the many positive consequences of our work.
+                </p>
+            </article>
+        </div>
+        <!-- Article no. 2 end -->
+
+        <!-- Article no. 3 start (right size)_desktop - Image no. 6_desktop -->
+        <div class="article img-r desktop">
+            <article>
+                <h2>THE WHOLE WORLD IS WATCHING US</h2>
+                <p>
+                    Traveling to the Center of the Earth is a fantastic adventure. Some missions were completed before we carefully select the perfect route and team to support you in this fantastic travel. The Jules Verne team, with its scientists and with established mineralogy companies, evaluated and mitigated risks and overcame difficulties step by step. The whole world will watch and experience this new journey. Join our global community and visit thousand of photos and impressions of the last adventurers.
+                </p>
+            </article>
+            <div class="img">
+                <img class="main-img" src="images/img6caveice.jpg" alt="ice cave">
+            </div>
+        </div>
+        <!-- Article no. 3 end -->
+
+    </section>
+    <!-- Article no. 2 and no. 3 end -->
+
+
+  	<footer>
+
+		<!-- Community Line Start -->
+        <section id="community">
+			<h2>Your Extraordinary Journey to the Center of the Earth Starts Here!</h2>
+			<div>
+                <a href="jvtcommunity.html" title="link to blog community of Jules Verne Travel">Join Our Global Community</a>
+            </div>
+		</section>
+        <!-- Community Line end -->
+
+        <!-- Footer navigation start -->
+        <section id="fnavigation" class="desktop">
+            <nav>
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li>
+                        <a href="jvthistory.html" title="Jules Verne Travel History">Jules Verne Travel</a>
+                    </li>
+                    <li>
+                        <a href="jvtteam.html" title="Team">Team</a>
+                    </li>
+                    <li>
+                        <a href="jvtmission.html" title="Team">Mission</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h3>TECHNOLOGY</h3>
+                <ul>
+                    <li>
+                        <a href="simulator.html" title="Travel Simulator">Travel Simulator</a>
+                    </li>
+                    <li>
+                        <a href="vehicle.html" title="Transit Vehicle">Transit Vehicle</a>
+                    </li>
+                    <li>
+                        <a href="suit.html" title="Travel Suit">Travel Suit</a>
+                    </li>
+                    <li>
+                        <a href="natural.html" title="Natural Resources">Natural Resources</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h3>BUSINESS MEMBERS</h3>
+                <ul>
+                    <li>
+                        <a href="strategy.html" title="Strategy">Strategy</a>
+                    </li>
+                    <li>
+                        <a href="events.html" title="Events and Presentations">Events</a>
+                    </li>
+                    <li>
+                        <a href="marketing.html" title="Marketing">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="reports.html" title="Natural Reports">Reports</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h3>NEWS</h3>
+                <ul>
+                    <li>
+                        <a href="world.html" title="News around the world">World News</a>
+                    </li>
+                    <li>
+                        <a href="local.html" title="Local News">Local News</a>
+                    </li>
+                    <li>
+                        <a href="tvchannel.html" title="Famous TV Channel">Famous TV Channel</a>
+                    </li>
+                    <li>
+                        <a href="enews.html" title="e_Newsletter">e-Newsletter</a>
+                    </li>
+              </ul>
+          </nav>
+          
+        </section>
+        <!-- Footer navigation end -->
+
+        <!--Copyright Line start -->
+        <section id="copyright">
+            <p>Copyright &copy; 2018 Silva</p>
+        </section>
+        <!-- Copyright Line end -->
+
+    </footer>
+
 </body>
+
 </html>

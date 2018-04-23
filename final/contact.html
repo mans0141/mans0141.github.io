@@ -1,9 +1,210 @@
 <!DOCTYPE html>
-<html>
+
+<!-- Language attribute = Canadian English -->
+<html lang="en-ca">
+
+
+<!-- The begin of the head element -->
+<!-- To define the document title, character set, styles, links, scripts, and other meta information. ... -->
 <head>
-	<title>Contact Page</title>
+    <!-- Title of the document -->
+    <title>Contact Page HTML - Jules Verne Travel</title>
+    <!-- To define the character set of this document -->
+	<meta charset="utf-8">
+	<!-- Meta description tag is a SEO tag used here to tell the site crawlers what this site is about -->
+    <meta name="description" content="sell the journey to the center of the earth">
+    <!-- Meta keywords is a SEO tag used here to tell the site crawlers about the keywords in this website -->
+    <meta name="keywords" content="extraordinary travel, journey, jules verne, center of the earth, geological, mineralogy">
+    <!-- To tell the SEO crawlers to index and follow this webpage -->
+    <meta name="robots" content="index, follow">
+    <!-- CSS - link css file -->
+    <link rel="stylesheet" type="text/css" href="styles/validation.css">
+
+	<!-- JS - link JQuery using Google API -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- JS - link javascript file -->
+	<script src="scripts/validation.js"></script>
 </head>
-<body>
+
+
+<!-- The begin of the body element -->
+<body class="clearfix">
+
+    <!-- The begin of the Search Bar -->
+    <section id="search-line">
+        <form action="somepage.php" method="get">
+            <input type="search" name="googlesearch" placeholder="keywords...">
+            <input type="submit" value="Search">
+        </form>
+    </section>
+    <!-- The end of the Search Bar -->
+
+
+    <!-- The begin of the header -->
+	<header>
+        <section id="topnav-container">
+
+            <!-- Logo elements start - Image no.1 and Company's name-->
+            <div class="logo">
+                <img src="images/img1jvtlogo.png" width="60" height="60" alt="Jules Verne Travel Logo">
+                <div>
+                    <h1>Jules Verne</h1>
+                    <h1>Travel</h1>
+                </div>
+            </div>
+            <!-- Logo elements end -->
+
+            <!-- Desktop Navigation start -->
+            <nav class="desktop-nav">
+                <ul class="main-nav">
+                  <li>
+                    <a href="index.html" title="link to home page of Jules Verne Travel">HOME</a>
+                  </li>
+                  <li>
+                    <a href="thirdpage.html" title="link to journey details">JOURNEY</a>
+                  </li>
+                  <li>
+                    <a href="jvtaboutus.html" title="link to about the Jules Verne Travel">ABOUT US</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" title="link to contact form">CONTACT</a>
+                  </li>
+                </ul>
+            </nav>
+            <!-- Desktop Navigation end -->
+
+            <!-- Navigation for Mobile start -->
+			<nav class="mobile-nav smart">
+				<a href="javascript:void(0)" onclick="openNav()"></a>
+			</nav>
+			<div id="sideNav">
+				<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+				<a href="index.html" title="link to home page of Jules Verne Travel">HOME</a>
+				<a href="thirdpage.html" title="link to journey details">JOURNEY</a>
+				<a href="jvtaboutus.html" title="link to about the Jules Verne Travel">ABOUT US</a>
+				<a href="contact.html" title="link to contact form">CONTACT</a>
+			</div>
+            <!-- Navigation for Mobile end -->
+
+        </section>
+    </header>
+    <!-- The end of the header -->
+
+    <!-- Decorative element start -->
+    <div id="red-division" class="red-division"></div>
+    <!-- Decorative element end -->
+
+    <!-- Principal Element of the Contact Page start -->
+    <section id="block2C">
+
+		<h3>CONTACT</h3>
+
+		<!-- Colect Information Form Begin -->
+		<form id="htmlForm" action="somepageC.php" method="get">
+
+			<!-- Assignment Required Element = Name -->				
+			<div class="details">
+				<label for="firstName">Name</label>
+				<input type="text" name="firstName" id="firstName">
+			</div>
+
+			<div class="details">
+				<label for="emailAdd">Your E-mail</label>
+				<input type="email" name="emailAdd" id="emailAdd">
+			</div>
+
+			<div class="details">
+				<label for="postalCode">Your Postal Code</label>
+				<input type="text" name="postalCode" id="postalCode">
+			</div>
+
+			<div class="details">
+				<label for="yourMessage">Message</label>
+				<textarea name="yourMessage" id="yourMessage"></textarea>
+			</div>
+
+			<!-- Assigment Required Element = a set of radio button -->
+			<div class="selection-block">
+				<h4>What gender are you?</h4>
+				<label for="female">
+					<input type="radio" name="forms" id="female">
+					Female
+				</label>
+				<label for="male">
+					<input type="radio" name="forms" id="male" checked>
+					Male
+				</label>
+				<label for="other">
+					<input type="radio" name="forms" id="other">
+					Other
+				</label>
+			</div>
+
+			<!-- Assignment Required Element = 1st Check Box -->
+			<div class="selection-block2">
+				<h4>What are your reasons to contact us?</h4>
+				<label for="client">
+					<input type="checkbox" class="reason" name="client" id="client" value="Client" checked>
+					Looking for more information
+				</label>
+				<label for="business">
+					<input type="checkbox" class="reason" name="business" id="business" value="Business">
+					Business & Partnership opportunities
+				</label>
+				<label for="otherReasons">
+					<input type="checkbox" class="reason" name="otherReasons" id="otherReasons" value="OtherReasons">
+					Other
+				</label>
+			</div>
+
+			<!-- Assignment Required Element = 2nd Check Box -->
+			<div class="selection-block">
+				<h4>Which language(s) would you like our answer?</h4>
+					<label for="english">
+					<input type="checkbox" class="language" name="english" id="english" value="English" checked>
+					English
+				</label>
+				<label for="french">
+					<input type="checkbox" class="language" name="french" id="french" value="French">
+					French
+				</label>
+			</div>
+
+			<div class="btn-container">
+				<button class="but" id="submit-btn" type="submit">Send</button>
+			</div>
+
+		</form>
+
+	</section>
+
+
+	<!-- Decorative element start -->
+   	<div id="grey-division" class="grey-division"></div>
+	<!-- Decorative element end -->
+
+
+  	<footer>
+
+		<!-- Community Line Start -->
+        <section id="community">
+			<h2>Your Extraordinary Journey to the Center of the Earth Starts Here!</h2>
+			<div>
+                <a href="jvtcommunity.html" title="link to blog community of Jules Verne Travel">Join Our Global Community</a>
+            </div>
+		</section>
+        <!-- Community Line end -->
+
+        <!--Copyright Line start -->
+        <section id="copyright">
+            <p>Copyright &copy; 2018 Silva</p>
+        </section>
+        <!-- Copyright Line end -->
+
+    </footer>
+
 
 </body>
+
 </html>

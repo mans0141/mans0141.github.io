@@ -1,9 +1,226 @@
 <!DOCTYPE html>
-<html>
+
+<!-- Language attribute = Canadian English -->
+<html lang="en-ca">
+
+
+<!-- The begin of the head element -->
+<!-- To define the document title, character set, styles, links, scripts, and other meta information. ... -->
 <head>
-	<title>Third Page</title>
+    <!-- Title of the document -->
+    <title>Home Page HTML - Jules Verne Travel</title>
+    <!-- To define the character set of this document -->
+    <meta charset="utf-8">
+    <!-- Meta description tag is a SEO tag used here to tell the site crawlers what this site is about -->
+    <meta name="description" content="sell the journey to the center of the earth">
+    <!-- Meta keywords is a SEO tag used here to tell the site crawlers about the keywords in this website -->
+    <meta name="keywords" content="extraordinary travel, journey, jules verne, center of the earth, geological, mineralogy">
+    <!-- To tell the SEO crawlers to index and follow this webpage -->
+    <meta name="robots" content="index, follow">
+
+    <!-- CSS - Font ROBOTO from google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- CSS - link css file -->
+    <link rel="stylesheet" type="text/css" href="styles/slider.css">
+
+    <!-- CSS - link responsive slider css by @viljamis -->
+    <link rel="stylesheet" type="text/css" href="styles/responsiveslider.css">
+
+    <!-- JS - link JQuery using Google API -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- JS - link responsive slider javascript file by @viljamis -->
+    <script src="scripts/responsiveslides.min.js"></script>
+
+    <!-- JS - link javascript file -->
+    <script src="scripts/slider.js"></script>
 </head>
-<body>
+
+
+<!-- The begin of the body element -->
+<body class="clearfix">
+
+<!-- The begin of the Search Bar -->
+<section id="search-line">
+    <form action="somepage.php" method="get">
+        <input type="search" name="googlesearch" placeholder="keywords...">
+        <input type="submit" value="Search">
+    </form>
+</section>
+<!-- The end of the Search Bar -->
+
+
+<!-- The begin of the header -->
+<header>
+    <section id="topnav-container">
+
+        <!-- Logo elements start - Image no.1 and Company's name-->
+        <div class="logo">
+            <img src="images/img1jvtlogo.png" width="60" height="60" alt="Jules Verne Travel Logo">
+            <div>
+                <h1>Jules Verne</h1>
+                <h1>Travel</h1>
+            </div>
+        </div>
+        <!-- Logo elements end -->
+
+        <!-- Desktop/Tablet Navigation start -->
+        <nav class="desktop-nav">
+            <ul class="main-nav">
+                <li>
+                    <a href="index.html" title="link to home page of Jules Verne Travel">HOME</a>
+                </li>
+                <li>
+                    <a href="thirdpage.html" title="link to journey details">JOURNEY</a>
+                </li>
+                <li>
+                    <a href="jvtaboutus.html" title="link to about the Jules Verne Travel">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="contact.html" title="link to contact form">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Desktop Navigation end -->
+
+        <!-- Navigation for Mobile start -->
+        <nav class="mobile-nav smart">
+            <a href="javascript:void(0)" onclick="openNav()"></a>
+        </nav>
+
+        <div id="sideNav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="index.html" title="link to home page of Jules Verne Travel">HOME</a>
+            <a href="thirdpage.html" title="link to journey details">JOURNEY</a>
+            <a href="jvtaboutus.html" title="link to about the Jules Verne Travel">ABOUT US</a>
+            <a href="contact.html" title="link to contact form">CONTACT</a>
+        </div>
+        <!-- Navigation for Mobile end -->
+
+    </section>
+</header>
+<!-- The end of the header -->
+
+<!-- Decorative element start -->
+<div id="red-division" class="red-division"></div>
+<!-- Decorative element end -->
+
+
+<!-- Principal Element of the Home Page start -->
+<section id="main-content">
+    <div class="text-content">
+        <h2>JOURNEY TO THE CENTER OF THE EARTH</h2>
+        <p>This journey is the realization of an amazing dream! Imagine visiting on the interior of the planet, some
+            miles from the Earth’s surface; looking down into the volcano with the knowledge that you are visiting
+            the heart of the planet. Those who enjoyed this travel two years ago still remember every detail – where
+            they were, who they were with and how they felt. See the photos below:</p>
+    </div>
+
+    <!-- Slider -->
+    <div class="rslides_container">
+        <ul class="rslides">
+            <li><img src="images/img3volcano.jpg" alt=""></li>
+            <li><img src="images/img4cave.jpg" alt=""></li>
+            <li><img src="images/img6caveice.jpg" alt=""></li>
+        </ul>
+    </div>
+</section>
+<!-- Principal Element of the Home Page end -->
+
+<footer>
+
+    <!-- Community Line Start -->
+    <section id="community">
+        <h2>Your Extraordinary Journey to the Center of the Earth Starts Here!</h2>
+        <div>
+            <a href="jvtcommunity.html" title="link to blog community of Jules Verne Travel">Join Our Global Community</a>
+        </div>
+    </section>
+    <!-- Community Line end -->
+
+    <!-- Footer navigation start -->
+    <section id="fnavigation" class="desktop">
+        <nav>
+            <h3>ABOUT US</h3>
+            <ul>
+                <li>
+                    <a href="jvthistory.html" title="Jules Verne Travel History">Jules Verne Travel</a>
+                </li>
+                <li>
+                    <a href="jvtteam.html" title="Team">Team</a>
+                </li>
+                <li>
+                    <a href="jvtmission.html" title="Team">Mission</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav>
+            <h3>TECHNOLOGY</h3>
+            <ul>
+                <li>
+                    <a href="simulator.html" title="Travel Simulator">Travel Simulator</a>
+                </li>
+                <li>
+                    <a href="vehicle.html" title="Transit Vehicle">Transit Vehicle</a>
+                </li>
+                <li>
+                    <a href="suit.html" title="Travel Suit">Travel Suit</a>
+                </li>
+                <li>
+                    <a href="natural.html" title="Natural Resources">Natural Resources</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav>
+            <h3>BUSINESS MEMBERS</h3>
+            <ul>
+                <li>
+                    <a href="strategy.html" title="Strategy">Strategy</a>
+                </li>
+                <li>
+                    <a href="events.html" title="Events and Presentations">Events</a>
+                </li>
+                <li>
+                    <a href="marketing.html" title="Marketing">Marketing</a>
+                </li>
+                <li>
+                    <a href="reports.html" title="Natural Reports">Reports</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav>
+            <h3>NEWS</h3>
+            <ul>
+                <li>
+                    <a href="world.html" title="News around the world">World News</a>
+                </li>
+                <li>
+                    <a href="local.html" title="Local News">Local News</a>
+                </li>
+                <li>
+                    <a href="tvchannel.html" title="Famous TV Channel">Famous TV Channel</a>
+                </li>
+                <li>
+                    <a href="enews.html" title="e_Newsletter">e-Newsletter</a>
+                </li>
+            </ul>
+        </nav>
+
+    </section>
+    <!-- Footer navigation end -->
+
+    <!--Copyright Line start -->
+    <section id="copyright">
+        <p>Copyright &copy; 2018 Silva</p>
+    </section>
+    <!-- Copyright Line end -->
+
+</footer>
 
 </body>
+
 </html>
