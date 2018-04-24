@@ -397,6 +397,56 @@ header{
 	margin-left: 50px;
 }
 
+/* PAGE ABOUT US -- CSS */
+
+.grey-division {
+	background-color: #333333;
+	height: 5px;
+}
+
+#block2A {
+	padding: 80px 10%;
+}
+
+#block2A {
+	background: #ffffff;
+	color:#000000;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+div.anima {
+    width: 110px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #cccccc;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+
 
 /* ******** MOBILE / Tablet ********** < 768px ***** */
 

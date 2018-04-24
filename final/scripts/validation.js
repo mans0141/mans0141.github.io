@@ -12,9 +12,9 @@ $(document).ready(function(){
         ev.preventDefault();
         var valid = validateForm();
         if(valid) {
-            alert('You have successfully completed the form');
+            alert('Thank you! You have successfully completed the form');
         } else {
-            alert('There are errors in form');
+            alert('Sorry! All form must be filled out');
         }
     });
 
